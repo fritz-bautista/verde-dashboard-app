@@ -1,0 +1,96 @@
+.college-container {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.alert.success {
+    background-color: #e6ffed;
+    color: #17643b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.college-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.college-crud, .college-analytics {
+    background: white;
+    border-radius: 19px;
+        border: 2px solid #c3c6ce;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.add { background: #007bff; color: white; }
+.btn.add:hover { background: #0062d1; }
+
+.btn.delete { background: #dc3545; color: white; }
+.btn.delete:hover { background: #b42b38; }
+
+.btn.edit { background: #ffc107; color: black; }
+.btn.edit:hover { background: #e0a800; }
+
+.btn.cancel { background: #ccc; }
+.btn.save { background: #28a745; color: white; }
+
+.college-table, .ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.college-table th, .college-table td,
+.ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.modal {
+    border: none;
+    padding: 0;
+}
+
+.modal-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.modal-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}

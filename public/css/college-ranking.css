@@ -1,0 +1,276 @@
+/* ==============================
+   General Container
+============================== */
+.manager-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Poppins;
+    color: #333;
+    padding: 2vh;
+}
+
+/* ==============================
+   Section Styling
+============================== */
+.section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.semester-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.subheading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.current-semester {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+
+.current-semester h4 {
+    font-size: 2vh;
+    margin: 0;
+}
+
+.current-semester b {
+    font-size: 3vh;
+    margin: 0;
+}
+
+/* ==============================
+   Tables
+============================== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background: #0B7D3F;
+    color: #fff;
+    font-weight: 500;
+}
+
+.table tr:hover {
+    background: #f1f1f1;
+    transition: 0.3s;
+}
+
+/* ==============================
+   Badges
+============================== */
+.badge {
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.badge.active {
+    background: #0B7D3F;
+}
+
+.badge.inactive {
+    background: #6c757d;
+}
+
+/* ==============================
+   Buttons
+============================== */
+.btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+.btn.add,
+.btn.save,
+.btn.start {
+    font-family: Poppins;
+    background: #0B7D3F;
+    color: #fff;
+    height: 5vh;
+}
+
+.btn.edit {
+    background: #ffc107;
+    font-family: Poppins;
+    color: #fff;
+}
+
+.btn.delete,
+.btn.stop {
+    background: #dc3545;
+    font-family: Poppins;
+    color: #fff;
+}
+
+.btn.cancel {
+    background: #6c757d;
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ==============================
+   Modals
+============================== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal h4,
+.modal h5 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.modal input[type=text],
+.modal input[type=number],
+.modal select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.modal-buttons,
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* ==============================
+   Alerts
+============================== */
+.alert.success {
+    background: #0B7D3F;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* ==============================
+   Ranking History Table
+============================== */
+.ranking-history {
+    margin-top: 20px;
+}
+
+.ranking-history h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.ranking-table th {
+    background: #0B7D3F;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+.ranking-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ranking-table tr:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ==============================
+   Responsive
+============================== */
+@media screen and (max-width: 768px) {
+    .manager-container {
+        gap: 20px;
+    }
+
+    .table,
+    .ranking-table {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}

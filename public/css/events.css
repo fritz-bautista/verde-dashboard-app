@@ -1,0 +1,142 @@
+.events-dashboard-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin-top: 2vh;
+    gap: 2vh;
+    justify-content: space-between;
+}
+
+.event-table-container {
+    width: 100%;
+    border: 2px solid #c3c6ce;
+    height: 70vh;
+    border-radius: 1.8vh;
+    padding: 1.5vh;
+    text-align: left;
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0.6vh 1.5vh rgba(0, 0, 0, 0.2);
+
+}
+
+.event-table-container h2 {
+    font-size: 2vh;
+    padding-left: 3vh;
+    width: 100%;
+    text-align: left;
+}
+
+.table-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-event-btn {
+    background-color: #0B7D3F;
+    color: white;
+    border: none;
+    padding: 0.5vh 1vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    font-size: 2vh;
+    height: 5vh;
+    font-size: 2vh;
+    font-family: Poppins, sans-serif;
+    width: 20vh;
+    margin-left: 2vh;
+
+}
+
+.search-bar-header {
+    font-size: 2vh;
+    width: 40%;
+    height: 4vh;
+    border-radius: 1vh;
+    padding: 0.5vh 1vh;
+    border: 1px solid #ccc;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.event-table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+.event-table thead {
+    border-top: 1px solid #e0e0e0;
+    font-weight: 400;
+}
+
+.event-table th,
+.event-table td {
+    text-align: left;
+    height: 5vh;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.event-table tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+.event-table td:last-child {
+    font-weight: bold;
+}
+
+.event-form {
+    width: 100%;
+    height: 6vh;
+    border: 2px solid #c3c6ce;
+    background-color: #ffffff;
+    border-radius: 1.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+.event-form form {
+    display: flex;
+    gap: 1.5vh;
+}
+
+.event-form input {
+    height: 4vh;
+    border: 1px solid #c3c6ce;
+    border-radius: 1vh;
+    font-family: Poppins;
+    width: 20vh;
+    font-size: 1.8vh;
+}
+
+.floor {
+    width: 10vh !important;
+}
+
+.date {
+    width: 15vh !important;
+}
+
+.event-form button {
+    font-family: Poppins;
+}

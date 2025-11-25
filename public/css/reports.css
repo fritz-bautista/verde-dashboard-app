@@ -1,0 +1,18 @@
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.chart-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chart-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
